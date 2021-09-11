@@ -3,12 +3,17 @@ class PersonasController < ApplicationController
 
   # GET /personas or /personas.json
   def index
+
     @personas = Persona.all.sort_by {|p| p.fecha_nacimiento.mon}
-    #@personas = @personas.sort_by {|p| p.fecha_nacimiento.mon}
+    
+    @edadPromedio = 0;
+    @personas.each {|p| @edadPromedio += Time.new.year - p.fecha_nacimiento.year}    
+    @edadPromedio /=  @personas.length
   end
 
   # GET /personas/1 or /personas/1.json
   def show
+    @edad = Time.new.year - @persona.fecha_nacimiento.year
   end
 
   # GET /personas/new
