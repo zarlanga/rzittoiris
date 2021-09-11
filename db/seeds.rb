@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-20.times {|i|   puts i; 
-#i = 33 ;
-Persona.create(nombre: "nani#{i}",
-  apellido: "sedeandosedeando#{i}",
-  fecha_nacimiento: Date.new(1900 + rand(120),1+rand(12),1+rand(27) ),
-  nroDNI: rand(40000000) )
-}
+20.times {|i|
+  puts i; 
+  Persona.create(nombre: "nani#{i}",
+    apellido: "sedeandosedeando#{i}",
+    fecha_nacimiento: Date.new(1900 + rand(120),1+rand(12),1+rand(27) ),
+    nroDNI: rand(40000000) )
+  }

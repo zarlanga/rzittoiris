@@ -3,8 +3,8 @@ class PersonasController < ApplicationController
 
   # GET /personas or /personas.json
   def index
-    @personas = Persona.all
-    @personas = @personas.sort_by {|p| p.fecha_nacimiento.mon}
+    @personas = Persona.all.sort_by {|p| p.fecha_nacimiento.mon}
+    #@personas = @personas.sort_by {|p| p.fecha_nacimiento.mon}
   end
 
   # GET /personas/1 or /personas/1.json
