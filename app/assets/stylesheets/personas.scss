@@ -1,6 +1,69 @@
 // Place all the styles related to the Personas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.personas {
+  background-color:#aaf;
+  text-align:center;
+
+  table, article, form{
+  margin:auto;
+  background-color: rgba(200,150,150,0.7);
+  border-radius:20px;
+  }
+  
+  article,form {
+    display:inline-block;
+    padding:20px 60px;
+    
+    p, label, input,select {
+      padding: 10px 0px;
+      font-size:1.4em;
+
+      strong {
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+  h1, h2 {
+    text-decoration: underline;
+  }
+
+  nav {
+    display:inline-block;
+    margin:30px;
+    a {
+      font-size:1.2em;
+      padding:10px;
+    }
+  }
+  
+  th, td {
+    padding:10px;
+    text-align:center;
+  }
+  
+  td {
+    font-size:1.3em;
+  }
+
+  th {
+    border-bottom: 3px solid #222;
+    font-size:1.4em;
+  }
+
+  a {
+    color:#244;
+    
+  }
+  a:visited {
+    color:#577;
+  }
+
+}
+
 /*
 .personas {
   table {

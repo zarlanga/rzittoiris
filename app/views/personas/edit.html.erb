@@ -1,6 +1,11 @@
 <h1>Editing Persona</h1>
 
-<%= render 'form', persona: @persona %>
+<nav>
+  <%= link_to 'Show', @persona %> |
+  <%= link_to 'Back', personas_path %>
+</nav>
+<br>
 
-<%= link_to 'Show', @persona %> |
-<%= link_to 'Back', personas_path %>
+<%= render 'form', persona: @persona %>
+<br>
+
